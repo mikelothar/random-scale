@@ -1,7 +1,9 @@
 var notes = ['C major', 'G major', 'D major', 'A major', 'E major', 'B major', 'F major']
 
-document.addEventListener('click', function () {
-  document.getElementById('note').innerHTML = getNote()
+var noteEl = document.getElementById('note')
+
+noteEl.addEventListener('click', function () {
+  noteEl.innerHTML = getNote()
 })
 
 var prevNote = 0
